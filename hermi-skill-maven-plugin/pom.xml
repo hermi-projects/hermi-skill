@@ -3,18 +3,18 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.hermi</groupId>
-    <artifactId>hermi-skill</artifactId>
+    <artifactId>hermi-skill-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>skills-maven-plugin</artifactId>
+  <artifactId>hermi-skill-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
 
   <description>Maven plugin that installs bundled AI skills</description>
   <dependencies>
     <dependency>
       <groupId>org.hermi</groupId>
-      <artifactId>hs-install-skill-use-case</artifactId>
+      <artifactId>hermi-skill-core</artifactId>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
