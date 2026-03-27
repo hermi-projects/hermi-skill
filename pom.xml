@@ -25,8 +25,8 @@
     </developer>
   </developers>
   <modules>
-    <module>use-cases/hermi-install-skill-use-case</module>
-    <module>hermi-shell-maven-plugin</module>
+    <module>use-cases/hs-install-skill-use-case</module>
+    <module>hs-shell-maven-plugin</module>
   </modules>
 
   <scm>
@@ -131,7 +131,7 @@
       </dependency>
       <dependency>
         <groupId>org.hermi</groupId>
-        <artifactId>hermi-install-skill-use-case</artifactId>
+        <artifactId>hs-install-skill-use-case</artifactId>
         <version>${hermi-install-skill-use-case.version}</version>
       </dependency>
     </dependencies>

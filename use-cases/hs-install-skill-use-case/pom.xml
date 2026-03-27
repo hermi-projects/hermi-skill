@@ -8,7 +8,7 @@
     <relativePath>../../pom.xml</relativePath>
   </parent>
 
-  <artifactId>hermi-install-skill-use-case</artifactId>
+  <artifactId>hs-install-skill-use-case</artifactId>
   <dependencies>
     <dependency>
       <groupId>org.hermi</groupId>
