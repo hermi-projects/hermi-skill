@@ -5,8 +5,8 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import java.io.File;
 import java.util.List;
-import org.hermi.commons.validation.Validatable;
-import org.hermi.usecase.UseCase;
+import org.hermi.usecase.commons.validation.Validatable;
+import org.hermi.usecase.standard.UseCase;
 
 public abstract class InstallSkillUseCase
     extends UseCase<InstallSkillUseCase.Command, InstallSkillUseCase.Result> {

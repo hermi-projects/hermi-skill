@@ -2,8 +2,8 @@ package org.hermi.skill.install.usecase.repository;
 
 import jakarta.validation.constraints.NotNull;
 import java.util.List;
-import org.hermi.commons.validation.Validatable;
-import org.hermi.usecase.Repository;
+import org.hermi.usecase.commons.validation.Validatable;
+import org.hermi.usecase.standard.Repository;
 
 public abstract class FindSkillRepository
     extends Repository<FindSkillRepository.Command, FindSkillRepository.Result> {
