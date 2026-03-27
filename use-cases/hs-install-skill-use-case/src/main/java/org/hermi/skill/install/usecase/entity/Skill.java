@@ -1,4 +1,4 @@
-package org.hermi.skill.install.usecase.repository;
+package org.hermi.skill.install.usecase.entity;
 
 import jakarta.validation.constraints.NotNull;
 

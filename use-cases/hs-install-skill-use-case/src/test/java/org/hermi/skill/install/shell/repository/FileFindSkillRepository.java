@@ -1,4 +1,4 @@
-package org.hermi.skill.install.usecase.repository;
+package org.hermi.skill.install.shell.repository;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -9,6 +9,8 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import org.hermi.skill.install.usecase.entity.Skill;
+import org.hermi.skill.install.usecase.repository.FindSkillRepository;
 
 public class FileFindSkillRepository extends FindSkillRepository {
 

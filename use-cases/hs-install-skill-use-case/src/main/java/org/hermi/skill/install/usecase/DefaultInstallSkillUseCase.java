@@ -5,8 +5,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import org.hermi.skill.install.usecase.entity.Skill;
 import org.hermi.skill.install.usecase.repository.FindSkillRepository;
-import org.hermi.skill.install.usecase.repository.Skill;
 
 public class DefaultInstallSkillUseCase extends InstallSkillUseCase {
 

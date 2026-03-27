@@ -2,6 +2,7 @@ package org.hermi.skill.install.usecase.repository;
 
 import jakarta.validation.constraints.NotNull;
 import java.util.List;
+import org.hermi.skill.install.usecase.entity.Skill;
 import org.hermi.usecase.commons.validation.Validatable;
 import org.hermi.usecase.standard.Repository;
 

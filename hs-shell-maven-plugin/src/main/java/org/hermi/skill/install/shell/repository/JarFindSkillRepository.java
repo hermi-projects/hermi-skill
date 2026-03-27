@@ -8,8 +8,8 @@ import java.util.Enumeration;
 import java.util.List;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
+import org.hermi.skill.install.usecase.entity.Skill;
 import org.hermi.skill.install.usecase.repository.FindSkillRepository;
-import org.hermi.skill.install.usecase.repository.Skill;
 
 public class JarFindSkillRepository extends FindSkillRepository {
 
