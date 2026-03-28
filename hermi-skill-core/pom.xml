@@ -13,7 +13,6 @@
     <dependency>
       <groupId>org.hermi</groupId>
       <artifactId>hs-install-skill-use-case</artifactId>
-      <version>${project.version}</version>
     </dependency>
   </dependencies>
 </project>

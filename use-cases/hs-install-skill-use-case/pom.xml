@@ -11,6 +11,10 @@
   <artifactId>hs-install-skill-use-case</artifactId>
   <dependencies>
     <dependency>
+      <groupId>jakarta.validation</groupId>
+      <artifactId>jakarta.validation-api</artifactId>
+    </dependency>
+    <dependency>
       <groupId>org.hermi</groupId>
       <artifactId>hermi-use-case</artifactId>
     </dependency>
