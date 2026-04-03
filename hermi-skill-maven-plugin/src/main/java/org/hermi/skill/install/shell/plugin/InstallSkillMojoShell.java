@@ -12,7 +12,7 @@ import org.hermi.skill.install.usecase.DefaultInstallSkillUseCase;
 import org.hermi.skill.install.usecase.InstallSkillUseCase;
 
 @Mojo(name = "install")
-public class InstallSkillMojo extends AbstractMojo {
+public class InstallSkillMojoShell extends AbstractMojo {
   @Parameter(defaultValue = "${project}", readonly = true)
   private MavenProject project;
 
