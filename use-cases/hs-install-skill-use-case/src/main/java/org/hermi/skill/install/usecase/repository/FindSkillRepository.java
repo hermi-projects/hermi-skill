@@ -7,8 +7,8 @@ import org.hermi.usecase.commons.validation.Validatable;
 import org.hermi.usecase.standard.Repository;
 
 public abstract class FindSkillRepository
-    extends Repository<FindSkillRepository.Command, FindSkillRepository.Result> {
-  public static record Command(List<String> skillNames) {}
+    extends Repository<FindSkillRepository.Context, FindSkillRepository.Result> {
+  public static record Context(List<String> skillNames) {}
 
   public static record Result(@NotNull List<Skill> skills) implements Validatable {}
 }

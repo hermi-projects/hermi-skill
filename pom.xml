@@ -32,20 +32,20 @@
   <modules>
     <module>use-cases/hs-install-skill-use-case</module>
     <module>hermi-skill-core</module>
-    <module>hermi-skill-maven-plugin</module>
+    <module>hermi-skill-maven-plugin-shell</module>
   </modules>
 
   <scm>
-    <connection>scm:git:https://github.com/hermi/hermi-use-case.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/hermi/hermi-use-case.git</developerConnection>
-    <url>https://github.com/hermi/hermi-use-case</url>
+    <connection>scm:git:https://github.com/hermi/hermi-skill.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/hermi/hermi-skill.git</developerConnection>
+    <url>https://github.com/hermi/hermi-skill</url>
   </scm>
 
   <distributionManagement>
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/hermi-projects/hermi-use-case</url>
+      <url>https://maven.pkg.github.com/hermi-projects/hermi-skill</url>
     </repository>
   </distributionManagement>
 

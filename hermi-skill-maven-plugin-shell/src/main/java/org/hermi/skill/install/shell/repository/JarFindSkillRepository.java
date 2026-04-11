@@ -14,13 +14,13 @@ import org.hermi.skill.install.usecase.repository.FindSkillRepository;
 public class JarFindSkillRepository extends FindSkillRepository {
 
   @Override
-  protected Result doSend(Command command) {
+  protected Result doExecute(Context context) {
     URL resource = getClass().getClassLoader().getResource("skills");
     if (resource == null || !"jar".equals(resource.getProtocol())) {
       return new Result(List.of());
     }
     try {
-      List<String> requestedNames = command.skillNames();
+      List<String> requestedNames = context.skillNames();
       return new Result(readFromJar(resource, requestedNames));
     } catch (IOException e) {
       throw new RuntimeException("Failed to read skills from jar", e);

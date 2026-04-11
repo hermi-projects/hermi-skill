@@ -9,9 +9,9 @@ import org.hermi.usecase.commons.validation.Validatable;
 import org.hermi.usecase.standard.UseCase;
 
 public abstract class InstallSkillUseCase
-    extends UseCase<InstallSkillUseCase.Command, InstallSkillUseCase.Result> {
+    extends UseCase<InstallSkillUseCase.Context, InstallSkillUseCase.Result> {
 
-  public static record Command(
+  public static record Context(
       @NotNull File baseDir,
       @NotNull @NotBlank String agent,
       @NotNull @NotEmpty List<String> skills)

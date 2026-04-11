@@ -42,8 +42,8 @@ public class FileFindSkillRepository extends FindSkillRepository {
   }
 
   @Override
-  protected Result doSend(Command command) {
-    Collection<String> requestedNames = command.skillNames();
+  protected Result doExecute(Context context) {
+    Collection<String> requestedNames = context.skillNames();
     URL resource = getClass().getClassLoader().getResource("skills");
     if (resource == null || !"file".equals(resource.getProtocol())) {
       return new Result(List.of());

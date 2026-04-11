@@ -21,18 +21,18 @@ public class DefaultInstallSkillUseCase extends InstallSkillUseCase {
   }
 
   @Override
-  protected Result doExecute(Command command) {
-    return installSkills(command);
+  protected Result doExecute(Context context) {
+    return installSkills(context);
   }
 
-  protected Result installSkills(Command command) {
+  protected Result installSkills(Context context) {
     List<String> installed = new ArrayList<>();
     List<String> failed = new ArrayList<>();
-    Path targetDir = command.baseDir().toPath().resolve("." + command.agent() + "/skills");
+    Path targetDir = context.baseDir().toPath().resolve("." + context.agent() + "/skills");
     for (FindSkillRepository repository : this.installSkillRepositories) {
 
-      var findSkillCommand = new FindSkillRepository.Command(command.skills());
-      var response = repository.send(findSkillCommand);
+      var findSkillCommand = new FindSkillRepository.Context(context.skills());
+      var response = repository.execute(findSkillCommand);
       for (Skill skill : response.skills()) {
         try {
           Path targetPath = targetDir.resolve(skill.relativePath());

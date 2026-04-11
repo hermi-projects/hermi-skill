@@ -32,10 +32,10 @@ public class InstallSkillMojoShell extends AbstractMojo {
     getLog().info("Installing skills...");
     try {
       List<String> names = this.skills != null ? this.skills : List.of();
-      var installSkillUseCaseCommand =
-          new InstallSkillUseCase.Command(this.project.getBasedir(), this.agent, names);
+      var installSkillUseCaseContext =
+          new InstallSkillUseCase.Context(this.project.getBasedir(), this.agent, names);
       InstallSkillUseCase useCase = new DefaultInstallSkillUseCase(new JarFindSkillRepository());
-      var response = useCase.execute(installSkillUseCaseCommand);
+      var response = useCase.execute(installSkillUseCaseContext);
       if (response.failedSkills().isEmpty()) {
         getLog().info("Installed skills: " + response.installedSkills());
       } else {
